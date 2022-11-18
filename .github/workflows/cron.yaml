@@ -3,7 +3,8 @@ name: Github Pages
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    # run at 8,10,12,14,16 hour every day CST
+    - cron: '0 0,2,4,6,8 * * *'
 
 jobs:
   deploy:
